@@ -28,6 +28,8 @@ todos.splice(position, 1);
 displayTodos();
 }
 
+console.log("hello");
+
 //creating objects
 var myComputer =
 {
