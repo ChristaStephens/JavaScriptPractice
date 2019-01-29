@@ -28,7 +28,6 @@ todos.splice(position, 1);
 displayTodos();
 }
 
-console.log("hello");
 
 //creating objects
 var myComputer =
@@ -37,3 +36,11 @@ operatingSystem: "pc",
 screenSize: "15 inches",
 purchaseYear: "2016"
 };
+
+//combining objects with functions
+var christa = {
+name: "Christa"
+sayName: function sayName() {
+console.log(this.name); //.name to print out only the name
+    }
+}
