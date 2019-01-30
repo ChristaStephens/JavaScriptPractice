@@ -39,8 +39,19 @@ purchaseYear: "2016"
 
 //combining objects with functions
 var christa = {
-name: "Christa"
-sayName: function sayName() {
-console.log(this.name); //.name to print out only the name
+name: "Christa",
+sayName: function() {
+console.log(this.name); //.name to print out only the name which is the property
     }
-}
+};
+
+//store todos array on an object
+var todoList =
+{
+  todos: ["item 1", "item 2", "item 3"],
+  displayTodos: function(){
+  	console.log("My Todos", this.todos);
+
+  }
+};
+
