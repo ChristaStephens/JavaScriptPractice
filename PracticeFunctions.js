@@ -48,10 +48,17 @@ console.log(this.name); //.name to print out only the name which is the property
 //store todos array on an object
 var todoList =
 {
-  todos: ["item 1", "item 2", "item 3"],
+  todos: ['item 1', 'item 2', 'item 3'],
   displayTodos: function(){
-  	console.log("My Todos", this.todos);
+  	console.log('My Todos', this.todos);
 
+  },
+  addTodo: function(todo){
+    this.todos.push(todo);
+    this.displayTodos();
   }
 };
 
+//test to see if it works - ctrl+B 
+// todoList.displayTodos();
+// todoList.addTodo("hey");
