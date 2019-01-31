@@ -64,6 +64,7 @@ var todoList =
   		console.log('My Todos:');
   	for( var i =0; i< this.todos.length; i++){
   		
+  		//allows for toggling of todos to mark if completed
   		if(this.todos[i].completed===true){
   		console.log('(x)', this.todos[i].todoText);
 
