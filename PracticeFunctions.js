@@ -50,7 +50,12 @@ var todoList =
 {
   todos: ['item 1', 'item 2', 'item 3', 'item 4'],
   displayTodos: function(){
-  	console.log('My Todos', this.todos);
+  	//don't need to print objects anymore becuase we are using loops
+  	//so we can take out this.todo
+  	console.log('My Todos:');
+  	for (var i =0; i< this.todos.length;i++){
+  		console.log(this.todos[i].todoText);
+  	}
 
   },
   addTodo: function(todoText){
