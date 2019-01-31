@@ -64,8 +64,9 @@ var todoList =
 };
 
 //test to see if it works - ctrl+B 
-// todoList.displayTodos();
-// todoList.addTodo("hey");
+todoList.displayTodos();
+todoList.addTodo("1");
+todoList.changeTodo(1, 'two');
 
 //intergrate with new function
 // function changeTodo(position, newValue){
