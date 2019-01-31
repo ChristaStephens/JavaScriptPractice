@@ -55,7 +55,8 @@ var todoList =
   },
   addTodo: function(todoText){
     this.todos.push({
-    	todoText: todoText, //the second todo text is refering to param
+    	todoText: todoText, 
+    	//the first is the name of the property, the second todo text is refering to param
     	completed: false
     	}
     );
