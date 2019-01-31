@@ -53,8 +53,12 @@ var todoList =
   	console.log('My Todos', this.todos);
 
   },
-  addTodo: function(todo){
-    this.todos.push(todo);
+  addTodo: function(todoText){
+    this.todos.push({
+    	todoText: todoText, //the second todo text is refering to param
+    	completed: false
+    	}
+    );
     this.displayTodos();
   },
   changeTodo: function(position, newValue){
@@ -67,10 +71,16 @@ var todoList =
   }
 };
 
+// {
+// 	todoText: 'item 1', 
+// 	completed: false
+// }
+
 //test to see if it works - ctrl+B 
 todoList.displayTodos();
-todoList.addTodo("1");
-todoList.changeTodo(1, 'two');
+todoList.addTodo("this is an object");
+// todoList.changeTodo(1, 'two');
+// todoList.deleteTodo(3, 1);
 
 //intergrate with new function
 // function changeTodo(position, newValue){
