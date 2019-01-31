@@ -62,3 +62,9 @@ var todoList =
 //test to see if it works - ctrl+B 
 // todoList.displayTodos();
 // todoList.addTodo("hey");
+
+//intergrate with new function
+// function changeTodo(position, newValue){
+// 	todos[position] = newValue;
+// 	displayTodos();;
+// }
