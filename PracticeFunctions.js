@@ -48,7 +48,7 @@ console.log(this.name); //.name to print out only the name which is the property
 //store todos array on an object
 var todoList =
 {
-  todos: ['item 1', 'item 2', 'item 3'],
+  todos: ['item 1', 'item 2', 'item 3', 'item 4'],
   displayTodos: function(){
   	console.log('My Todos', this.todos);
 
@@ -62,8 +62,8 @@ var todoList =
     );
     this.displayTodos();
   },
-  changeTodo: function(position, newValue){
-  	this.todos[position] = newValue;
+  changeTodo: function(position, todoText){
+  	this.todos[position].todoText = todoText;
   	this.displayTodos();
   },
   deleteTodo: function(position){
@@ -72,19 +72,11 @@ var todoList =
   }
 };
 
-// {
-// 	todoText: 'item 1', 
-// 	completed: false
-// }
 
 //test to see if it works - ctrl+B 
-todoList.displayTodos();
-todoList.addTodo("this is an object");
+// todoList.displayTodos();
+// todoList.addTodo("first try");
+// todoList.changeTodo(0, 'second');
 // todoList.changeTodo(1, 'two');
 // todoList.deleteTodo(3, 1);
 
-//intergrate with new function
-// function changeTodo(position, newValue){
-// 	todos[position] = newValue;
-// 	displayTodos();;
-// }
