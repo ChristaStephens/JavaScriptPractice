@@ -48,19 +48,11 @@ console.log(this.name); //.name to print out only the name which is the property
 //store todos array on an object
 var todoList =
 {
-  todos: ['item 1', 'item 2', 'item 3', 'item 4'],
+  todos: [],
   displayTodos: function(){
   	//don't need to print objects anymore becuase we are using loops
   	//so we can take out this.todo
-  	console.log('My Todos:');
-  	for (var i =0; i< this.todos.length;i++){
-  		console.log(this.todos[i].todoText);
-  	}
 
-  	//if there are no todos we want to console that list is empty
-  	//example if this.todos.length is equal to 0
-  	//or === 0
-  	//else print todos as normal
   	if(this.todos.length===0){
   		console.log('Your todo list is empty friend!')
 
@@ -70,6 +62,18 @@ var todoList =
   			console.log(this.todos[i].todoText);
   		}
   	}
+
+
+  	console.log('My Todos:');
+  	for (var i =0; i< this.todos.length;i++){
+  		console.log(this.todos[i].todoText);
+  	}
+
+  	//if there are no todos we want to console that list is empty
+  	//example if this.todos.length is equal to 0
+  	//use === 0 - more accurate
+  	//else print todos as normal
+  	
   	
 
   },
