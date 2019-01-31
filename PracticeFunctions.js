@@ -45,6 +45,10 @@ console.log(this.name); //.name to print out only the name which is the property
     }
 };
 
+/*
+ beginning of objects
+ */
+
 //store todos array on an object
 var todoList =
 {
@@ -58,25 +62,34 @@ var todoList =
 
   	} else{
   		console.log('My Todos:');
-  		for( var i =0; i< this.todos.length; i++){
-  			console.log(this.todos[i].todoText);
+  	for( var i =0; i< this.todos.length; i++){
+  		
+  		if(this.todos[i].completed===true){
+  		console.log('(x)', this.todos[i].todoText);
+
+  		}else{
+  		console.log('( )',this.todos[i].todoText);
+
+  				}
+  	
+  			}
   		}
-  	}
+	},
 
+  	
 
-  	console.log('My Todos:');
-  	for (var i =0; i< this.todos.length;i++){
-  		console.log(this.todos[i].todoText);
-  	}
+  	// console.log('My Todos:');
+  	// for (var i =0; i< this.todos.length;i++){
+  	// 	console.log(this.todos[i].todoText);
+  	// }
 
   	//if there are no todos we want to console that list is empty
   	//example if this.todos.length is equal to 0
   	//use === 0 - more accurate
   	//else print todos as normal
   	
-  	
 
-  },
+  
   addTodo: function(todoText){
     this.todos.push({
     	todoText: todoText, 
@@ -106,6 +119,10 @@ var todoList =
   }
 };
 
+/*
+Test Loops
+*/
+
 //you can console log i because it's a variable
 //use <= to include 3, also we are using this to count up
 for (var i = 0; i<=3; i++){
@@ -117,6 +134,10 @@ var testArray = ['item 1', 'item 2', 'item 3'];
 for (var i= 0; i< testArray.length; i++){
 	console.log(testArray[i]);
 }
+
+/*
+Test code
+*/
 
 //test to see if it works - ctrl+B 
 // todoList.displayTodos();
