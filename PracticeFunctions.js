@@ -69,6 +69,11 @@ var todoList =
   deleteTodo: function(position){
   	this.todos.splice(position, 1);
   	this.displayTodos();
+  },
+  toggleCompleted: function(position){
+  	var todo = this.todos[position];
+  	//if todo completed is true, this line will flip it to false
+  	todo.completed = !todo.completed;
   }
 };
 
