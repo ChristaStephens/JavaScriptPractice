@@ -71,9 +71,14 @@ var todoList =
   	this.displayTodos();
   },
   toggleCompleted: function(position){
+  	//show index position, that's why we're using brackets
   	var todo = this.todos[position];
   	//if todo completed is true, this line will flip it to false
   	todo.completed = !todo.completed;
+  	//grabbing the bool value and changing it using "!"
+  	//when grabbing the todo, put in the correct postion of index.
+
+  	this.displayTodos();
   }
 };
 
@@ -84,4 +89,6 @@ var todoList =
 // todoList.changeTodo(0, 'second');
 // todoList.changeTodo(1, 'two');
 // todoList.deleteTodo(3, 1);
+// todoList.addTodo('bool testing');
+// todoList.toggleCompleted(0);
 
